@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 13px;
+  font-family: "Manrope", Courier, monospace;
+}
+
+:root {
+  --clr-body-bg: hsl(210, 46%, 95%);
+  --clr-share-bg: hsl(217, 19%, 35%);
+
+  --fc-title: hsl(214, 17%, 51%);
+  --fc-paragraph: hsl(212, 23%, 69%);
+
+  --fw-title: 700;
+  --fw-name: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--clr-body-bg);
+}
+
+.card {
+  background-color: white;
+  margin: 4em 2em;
+  border-radius: 10px;
+}
+
+/* Header */
+/* .hero {
+  border: 2px solid;
+} */
+
+.hero__img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: cover;
+}
+/* Header End*/
+
+/* Main */
+.container {
+  padding: 2em;
+  padding-bottom: 1em;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--fc-title);
+  font-weight: var(--fw-title);
+}
+
+.description {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  color: var(--fc-paragraph);
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 40px;
+  margin-right: -3em;
+}
+
+.profile__date-name_name {
+  font-weight: var(--fw-title);
+}
+
+.profile__date-name_date {
+  color: var(--fc-paragraph);
+}
+
+.profile__share-btn {
+  background-color: var(--clr-body-bg);
+  padding: 0.8em;
+  border-radius: 50%;
+}
+
+.profile__share-btn:hover {
+  background-color: var(--fc-paragraph);
+  cursor: pointer;
+}
+/* Main End*/
+
+/* Footer */
+.share {
+  background-color: var(--clr-share-bg);
+  padding: 1em 2em;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: -2.5em;
+}
+
+.share__paragraph {
+  text-transform: uppercase;
+  color: var(--fc-paragraph);
+  letter-spacing: 0.5em;
+}
+
+.icon-2 {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.share__icon-share {
+  background-color: var(--fc-paragraph);
+  border-radius: 50%;
+  padding: 0.8em;
+}
+
+.share__icon-share:hover {
+  background-color: var(--clr-body-bg);
+  cursor: pointer;
+}
+
+/* Footer End*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Breakpoints */
