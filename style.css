@@ -26,17 +26,22 @@ body {
   background-color: var(--clr-body-bg);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+}
+
 .card {
   background-color: white;
   margin: 4em 2em;
   border-radius: 10px;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 /* Header */
-/* .hero {
-  border: 2px solid;
-} */
-
 .hero__img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -45,7 +50,7 @@ body {
 /* Header End*/
 
 /* Main */
-.container {
+.row {
   padding: 2em;
   padding-bottom: 1em;
 }
@@ -104,7 +109,7 @@ body {
   align-items: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-top: -2.5em;
+  margin-top: -1.55em;
 }
 
 .share__paragraph {
@@ -141,3 +146,110 @@ body {
 }
 
 /* Responsive Breakpoints */
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    width: 50%;
+    min-width: 720px;
+  }
+
+  .hero {
+    width: 40%;
+  }
+
+  .hero__img {
+    height: 100%;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .row {
+    width: 60%;
+    padding: 2em 3em;
+  }
+
+  .title {
+    color: rgba(0, 0, 0, 0.705);
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .profile__img {
+    max-width: 40px;
+  }
+
+  .profile__date-name {
+    margin-left: -8em;
+  }
+
+  .profile__date-name_name {
+    font-size: 1rem;
+  }
+
+  .profile__date-name_date {
+    font-size: 0.8rem;
+  }
+
+  .profile__share-btn {
+    width: 100%;
+    max-width: 35px;
+  }
+
+  .share {
+    background-color: var(--clr-share-bg);
+    position: absolute;
+    padding: 1em 1.5em;
+    bottom: 6.5em;
+    right: -3.3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .share::after {
+    position: absolute;
+    content: "";
+    background-color: var(--clr-share-bg);
+    top: 34px;
+    right: 90px;
+    height: 20px;
+    width: 20px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .share__icon-share {
+    display: none;
+  }
+
+  .share__paragraph {
+    font-size: 1rem;
+    margin-right: 1em;
+  }
+
+  .share__social-icon {
+    width: 50%;
+    text-align: end;
+  }
+
+  .icon {
+    width: 100%;
+    max-width: 14px;
+  }
+}
