@@ -4,12 +4,12 @@ const profileShareBtn = document.querySelector(".profile__share-btn");
 const shareShareBtn = document.querySelector(".share__icon-share");
 
 profileShareBtn.addEventListener("click", () => {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 700) {
     share.style.display = "flex";
     profile.style.display = "none";
   }
 
-  if (window.innerWidth > 1000) {
+  if (window.innerWidth > 700) {
     if (share.style.display == "none" && profileShareBtn.style.backgroundColor != "hsl(212, 23%, 69%)") {
       share.style.display = "flex";
       profileShareBtn.style.backgroundColor = "hsl(212, 23%, 69%)";
@@ -21,7 +21,7 @@ profileShareBtn.addEventListener("click", () => {
 });
 
 shareShareBtn.addEventListener("click", () => {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 700) {
     profile.style.display = "flex";
     share.style.display = "none";
   }

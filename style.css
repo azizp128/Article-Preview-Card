@@ -161,6 +161,7 @@ body {
     min-width: 720px;
   }
 
+  /*Header*/
   .hero {
     width: 40%;
   }
@@ -171,7 +172,9 @@ body {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
+  /*Header End*/
 
+  /*Main*/
   .row {
     width: 60%;
     padding: 2em 3em;
@@ -206,7 +209,9 @@ body {
     width: 100%;
     max-width: 35px;
   }
+  /*Main End*/
 
+  /*Footer*/
   .share {
     background-color: var(--clr-share-bg);
     position: absolute;
@@ -251,4 +256,5 @@ body {
     width: 100%;
     max-width: 14px;
   }
+  /*Footer End*/
 }
