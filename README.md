@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [SOLUTION](https://your-solution-url.com)
-- Live Site URL: [LIVE SITE](https://your-live-site-url.com)
+- Solution URL: [SOLUTION](https://www.frontendmentor.io/solutions/article-preview-component-using-css-flexbox-and-vanilla-js-14_FLkMWOg)
+- Live Site URL: [LIVE SITE](https://azizp128.github.io/Article-Preview-Component/)
 
 ## My process
 
